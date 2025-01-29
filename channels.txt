@@ -20,4 +20,4 @@
 11 ChanneliNews,https://www.youtube.com/@ChanneliNews/live
 
 
-12 channel24,https://www.channel24bd.tv/live
+12 channel24,https://www.youtube.com/@channel24digital/live

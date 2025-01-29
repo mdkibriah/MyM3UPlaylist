@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the repository folder
-cd /path/to/your-repository || exit
+ cd /home/ubuntu/livetv || exit
 
 # Check if there are changes
 if git diff --quiet && git diff --cached --quiet; then
