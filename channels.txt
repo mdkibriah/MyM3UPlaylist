@@ -8,6 +8,7 @@
 
 5 RtvNews,https://www.youtube.com/@RtvNews/live
 
+6 aljazeeraenglish,https://www.youtube.com/@aljazeeraenglish/live
 
 7 DBCNEWS,https://www.youtube.com/@dbcnewstv/live
 
@@ -19,5 +20,6 @@
 
 11 ChanneliNews,https://www.youtube.com/@ChanneliNews/live
 
-
 12 channel24,https://www.youtube.com/@channel24digital/live
+
+13 NBCNews,https://www.youtube.com/@NBCNews/live
