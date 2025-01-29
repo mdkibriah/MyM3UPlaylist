@@ -1,0 +1,19 @@
+name: Sync to Dropbox
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Upload to Dropbox
+        uses: aidenwallis/dropbox-uploader@v2
+        with:
+          dropboxToken: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+          arguments: upload ./path/to/file /dropbox/path/
