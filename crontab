@@ -1,0 +1,5 @@
+# Open crontab
+crontab -e
+
+# Add this line to run every hour
+0 * * * * /home/ubuntu/livetv/script.sh >> /path/to/logfile.log 2>&1
