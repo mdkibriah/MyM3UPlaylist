@@ -1,52 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Previous CSS styles remain the same -->
+<html lang="en" data-theme="dark">
 <head>
-    <!-- Previous head content remains the same until title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube IPTV Channels by mdkibriah</title>
-    <!-- Previous styles remain the same -->
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-primary: #58a6ff;
+            --accent-secondary: #1f6feb;
+            --success: #238636;
+            --success-hover: #2ea043;
+            --border: #30363d;
+            --toast-bg: #238636;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-primary), #bc8cff);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 2.5em;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+        }
+
+        .playlist-box {
+            background: var(--bg-secondary);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .url-container {
+            margin: 20px 0;
+        }
+
+        .url-label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .url-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-tertiary);
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin-bottom: 10px;
+        }
+
+        .url-text {
+            flex-grow: 1;
+            padding: 8px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            color: var(--accent-primary);
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 0.9em;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--success);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: var(--success-hover);
+            transform: translateY(-1px);
+        }
+
+        .copy-button {
+            padding: 8px 16px;
+            background: var(--accent-secondary);
+            color: var(--text-primary);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background: var(--accent-primary);
+            transform: translateY(-1px);
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: var(--toast-bg);
+            color: var(--text-primary);
+            border-radius: 6px;
+            display: none;
+            animation: fadeInOut 2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .instructions {
+            background: var(--bg-secondary);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            margin-top: 30px;
+        }
+
+        .instructions h2 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .instructions ul {
+            list-style-type: none;
+            color: var(--text-secondary);
+        }
+
+        .instructions ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .instructions ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-secondary);
+            padding: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .link {
+            color: var(--accent-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        .update-time {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 10px;
+            background: var(--bg-tertiary);
+            padding: 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(-20px); }
+            10% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>YouTube IPTV Channels</h1>
             <p class="description">Free YouTube IPTV playlist curated by mdkibriah</p>
-            <p class="update-time">Last Updated: 2025-01-29 05:17:36 UTC</p>
+            <p class="update-time">🕒 Last Updated: 2025-01-29 05:26:12 UTC</p>
         </div>
 
         <div class="playlist-box">
             <div class="button-container">
-                <a href="youtube_channels.m3u" class="button" download>Download M3U Playlist</a>
+                <a href="youtube_channels.m3u" class="button" download>
+                    📥 Download M3U Playlist
+                </a>
             </div>
 
-            <div class="url-box">
-                <div class="url-text" id="playlistUrl">https://mdkibriah.github.io/MyM3UPlaylist/youtube_channels.m3u</div>
-                <button class="copy-button" onclick="copyToClipboard()">Copy URL</button>
+            <div class="url-container">
+                <span class="url-label">📺 Add to your OTT Player (Auto-Update URL):</span>
+                <div class="url-box">
+                    <div class="url-text" id="playlistUrl">http://bit.ly/mdkibriah-yt-channels</div>
+                    <button class="copy-button" onclick="copyToClipboard()">Copy URL</button>
+                </div>
+                <span class="url-label">💡 Tip: Use this URL in your player for automatic updates</span>
             </div>
         </div>
 
         <div class="instructions">
-            <h2>How to Use</h2>
+            <h2>📝 How to Use</h2>
             <ul>
-                <li>Option 1: Download the playlist file</li>
-                <li>Option 2: Copy the URL above and add it to your IPTV player as a remote playlist for auto-updates</li>
-                <li>Recommended players:
+                <li>Download the playlist file directly for offline use</li>
+                <li>For auto-updates, copy the URL above and add it to your IPTV player as a remote playlist</li>
+                <li>Supported Players:
                     <ul>
-                        <li><a href="https://www.videolan.org/vlc/" class="player-link">VLC Media Player</a> (Desktop)</li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.gsetech.smartiptv" class="player-link">Smart IPTV</a> (Android)</li>
-                        <li><a href="https://apps.apple.com/us/app/iptv-player" class="player-link">IPTV Player</a> (iOS)</li>
+                        <li>TiviMate (Android TV)</li>
+                        <li>OTT Navigator (Android/Android TV)</li>
+                        <li>IPTV Smarters Pro (iOS/Android)</li>
+                        <li>VLC Media Player (Desktop)</li>
                     </ul>
                 </li>
+                <li>The playlist updates automatically every 24 hours</li>
             </ul>
         </div>
 
         <div class="footer">
-            <p>© 2025 Created by <a href="https://github.com/mdkibriah" class="player-link">mdkibriah</a></p>
-            <p>For updates and issues, please visit the <a href="https://github.com/mdkibriah/MyM3UPlaylist" class="player-link">GitHub repository</a></p>
+            <p>Created with ❤️ by <a href="https://github.com/mdkibriah" class="link">mdkibriah</a></p>
+            <p>For updates and issues, visit the <a href="https://github.com/mdkibriah/MyM3UPlaylist" class="link">GitHub repository</a></p>
         </div>
     </div>
 
-    <div id="toast" class="toast">URL copied to clipboard!</div>
+    <div id="toast" class="toast">✅ URL copied to clipboard!</div>
 
     <script>
         function copyToClipboard() {
@@ -58,7 +302,6 @@
             document.execCommand('copy');
             document.body.removeChild(textArea);
 
-            // Show toast notification
             const toast = document.getElementById('toast');
             toast.style.display = 'block';
             setTimeout(() => {
