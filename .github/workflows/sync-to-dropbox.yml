@@ -1,9 +1,10 @@
 name: Sync to Dropbox
-
 on:
   push:
     branches:
       - main
+    paths:
+      - 'youtube_channels.m3u'
 
 jobs:
   upload:
@@ -12,9 +13,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install Dropbox CLI
+        run: |
+          curl -L -o dropbox.py https://www.dropbox.com/download?dl=packages/dropbox.py
+          chmod +x dropbox.py
+          python3 dropbox.py
+          
+      - name: Setup Dropbox token
+        run: echo "${{ secrets.DROPBOX_ACCESS_TOKEN }}" > ~/.dropbox_uploader
+
       - name: Upload to Dropbox
-        uses: nwtgck/actions-dropbox@v2.0.0
-        with:
-          dropbox-token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          local-path: ./youtube_channels.m3u   # ✅ File is in repo root
-          dropbox-path: /Apps/github_m3u/youtube_channels.m3u
+        run: |
+          if [ -f "./youtube_channels.m3u" ]; then
+            ./dropbox.py upload youtube_channels.m3u /Apps/github_m3u/youtube_channels.m3u
+          else
+            echo "File not found!"
+            exit 1
+          fi
