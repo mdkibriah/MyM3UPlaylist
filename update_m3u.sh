@@ -19,3 +19,4 @@ git commit -m "Automated update of .m3u playlist"
 git push origin main
 
 echo "Playlist updated on GitHub!"
+echo "$(date) - update_m3u.sh ran" >> /home/ubuntu/livetv/update_m3u.log
