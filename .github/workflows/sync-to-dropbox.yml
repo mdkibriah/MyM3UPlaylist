@@ -13,7 +13,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Upload to Dropbox
-        uses: nwtgck/actions-dropbox@v2
+        uses: nwtgck/actions-dropbox@v2.0.0
         with:
-          dropboxToken: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          arguments: upload ./MyM3UPlaylist/youtube_channels.m3u /dropbox/Apps/github_m3u
+          dropbox-token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+          local-path: ./youtube_channels.m3u   # ✅ File is in repo root
+          dropbox-path: /Apps/github_m3u/youtube_channels.m3u
