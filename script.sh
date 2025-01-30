@@ -1,8 +1,4 @@
 #!/bin/bash
-INPUT_FILE="/home/ubuntu/livetv/channels.txt"
-while read -r line; do
-    echo "Processing: $line"
-done < "$INPUT_FILE"
 
 CONFIG_FILE="channels.txt"
 M3U_FILE="youtube_channels.m3u"
@@ -16,3 +12,4 @@ while IFS=',' read -r CHANNEL_NAME CHANNEL_URL; do
     echo "$LIVE_URL" >> "$M3U_FILE"
   fi
 done < "$CONFIG_FILE"
+echo "$(date) - script.sh ran" >> /home/ubuntu/livetv/script.log
