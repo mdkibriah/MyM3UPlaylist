@@ -16,4 +16,4 @@ jobs:
         uses: aidenwallis/dropbox-uploader@v2
         with:
           dropboxToken: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          arguments: upload ./youtube_channels.m3u /dropbox/Apps/github_m3u
+          arguments: upload ./ /dropbox/Apps/github_m3u
