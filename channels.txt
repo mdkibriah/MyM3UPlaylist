@@ -1,25 +1,13 @@
 1 jamuna,https://www.youtube.com/@JamunaTVbd/live
-
 2 SOMOYTV,https://www.youtube.com/@somoynews360/live
-
 3 EKHONTV,https://www.youtube.com/@ekhontv/live
-
 4 IndependentTelevision,https://www.youtube.com/@IndependentTelevision/live
-
 5 RtvNews,https://www.youtube.com/@RtvNews/live
-
 6 aljazeeraenglish,https://www.youtube.com/@aljazeeraenglish/live
-
 7 DBCNEWS,https://www.youtube.com/@dbcnewstv/live
-
 8 ATNNews24,https://www.youtube.com/@ATNNews24/live
-
 9 Makkah Live,https://www.youtube.com/@AlQuran4KOfficial/live
-
 10 Deshtvnews,https://www.youtube.com/@Deshtvnews/live
-
 11 ChanneliNews,https://www.youtube.com/@ChanneliNews/live
-
 12 channel24,https://www.youtube.com/@channel24digital/live
-
 13 NBCNews,https://www.youtube.com/@NBCNews/live
