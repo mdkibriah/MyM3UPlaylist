@@ -13,3 +13,5 @@ while IFS=',' read -r CHANNEL_NAME CHANNEL_URL; do
   fi
 done < "$CONFIG_FILE"
 echo "$(date) - script.sh ran" >> /home/ubuntu/livetv/script.log
+
+# This is a test comment
