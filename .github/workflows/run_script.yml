@@ -2,7 +2,7 @@ name: Run script every 40 minutes
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/50 * * * *"
 
 jobs:
   run-script:
