@@ -25,7 +25,7 @@ jobs:
       - name: Upload to Dropbox
         run: |
           if [ -f "./youtube_channels.m3u" ]; then
-            ./dropbox.py upload youtube_channels.m3u /Apps/github_m3u/youtube_channels.m3u
+            ./dropbox.py upload youtube_channels.m3u /github_m3u/youtube_channels.m3u
           else
             echo "File not found!"
             exit 1
