@@ -11,3 +11,19 @@
 11 ChanneliNews,https://www.youtube.com/@ChanneliNews/live
 12 channel24,https://www.youtube.com/@channel24digital/live
 13 NBCNews,https://www.youtube.com/@NBCNews/live
+14 abc7NY,https://www.youtube.com/@abc7NY/live
+15 CBCNews,https://www.youtube.com/@CBCNews/live
+16 livenowfox,https://www.youtube.com/@livenowfox/live
+17 Foxweather,https://www.youtube.com/@Foxweather/live
+18 Bloomberg Television,https://www.youtube.com/@markets/live
+18 YahooFinance,https://www.youtube.com/@YahooFinance/live
+18 SkyNews,https://www.youtube.com/@SkyNews/live
+18 Television,https://www.youtube.com/@markets/live
+19 news12,https://www.youtube.com/@news12/live
+20 NatGeoAnimals,https://www.youtube.com/@NatGeoAnimals/live
+21 livenowfox,https://www.youtube.com/@livenowfox/live
+22 news12,https://www.youtube.com/@news12/live
+23 CNBC,https://www.youtube.com/@CNBC/live
+24 TSportsLiveBangladesh,https://www.youtube.com/@TSportsLiveBangladesh/live
+25 EkattorTelevision,https://www.youtube.com/@EkattorTelevision/live
+26 NTVDigitalLive,https://www.youtube.com/@NTVDigitalLive/live
