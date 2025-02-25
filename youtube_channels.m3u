@@ -51,3 +51,51 @@ https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1740463281/ei/
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1740463285/ei/VQi9Z6q8LPmiir4P0Nm14Ag/ip/132.145.97.88/id/4qZI7nlE-js.1/itag/95/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D136/rqh/1/hls_chunk_host/rr4---sn-tt1e7nls.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/siu/1/bui/AUWDL3ywbk7OwpBF50ZhFxy0OgDel1easmSetgh3uwFmEpzNPSNup6aHY9aRGDS-y5IRK2Ezdg/spc/RjZbSf2lqtZa7_Bx9S1a1MgU8PuWTRd0AJNY3yWNT-1JxToPk2LOBs4zhIUjSdjN9f0_UVeD4vze/vprv/1/playlist_type/LIVE/met/1740441686,/mh/Am/mm/44/mn/sn-tt1e7nls/ms/lva/mv/u/mvi/4/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51326932,51355912/mt/1740441445/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIgOuTQyoXlTqBTAH9o91b_6EHXJeXLZRTreg0OBBtkuVUCIQDqaM2AM2-e_1kmrKeLPupre9YeUUSgdtUvx9BwQ1Z5Ug%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/AGluJ3MwRAIgW1nA8tjK_Apr-KHk6wRGop-GN4r9oeReq0AZR_QNxiICIADpicOhGQmIJBES_9oq_Z5YyzfrZTcIhgdvm_fVq9Vn/playlist/index.m3u8
 #EXTINF:-1, 26 NTVDigitalLive
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1740463288/ei/WAi9Z7SxJsKK2_gPhMvIkA8/ip/132.145.97.88/id/tc_zoT0hRfM.4/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr2---sn-tt1e7nlz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/siu/1/bui/AUWDL3zMvPw8FZuOnwRCb_y-5NsXMJTD8BI3ZgUrHbihOa_uodo2SIULjlA2t_Tegj7cVWNCpA/spc/RjZbScI_z0T3Kjdljd5z8TqBiiR91jqhwlabHbkYLPMkIC2TPK-UISUF8_Ns-Ww8awxi3v533MDq/vprv/1/playlist_type/DVR/met/1740441689,/mh/a7/mm/44/mn/sn-tt1e7nlz/ms/lva/mv/u/mvi/2/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51326932,51355912/mt/1740441445/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRAIgIAsTBcWcEbhFyKl891pj_Wnsmfell95Ofj9U1Qhg6a0CICWUtjsiQEJQ-PomoeRVbkio_nsvolnDnODTOVHkWGcx/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/AGluJ3MwRgIhANkHxLlfdFH5estch5-S66lFWW-vei_PxfYZKvmR1_p4AiEAor2iJenoIB1_CJ_WGykJg3YTQspuln1QouKrPKCuZew%3D/playlist/index.m3u8
+
+#EXTINF:-1, AJE
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+
+#EXTINF:-1, CNN
+
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+
+
+
+#EXTINF:-1  tvg-id="FOXNewsNow.us" group-title="News" tvg-logo="https://i.imgur.com/hc5a1YP.png",FOX News Now (720p)
+https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8
+
+
+
+#EXTINF:-1, skynews
+
+http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
+
+
+
+#EXTINF:-1, CNBC
+
+http://fl2.moveonjoy.com/CNBC/index.m3u8
+
+
+
+#EXTINF:-1, FOX Business (1080p)
+http://41.205.93.154/FOXBUSINESS/index.m3u8
+
+#EXTINF:-1  tvg-id="BloombergTVPlutoTV.us" group-title="Business" tvg-logo="http://cdn-profiles.tunein.com/s47135/images/logog.png",Bloomberg TV (Pluto TV)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/54ff7ba69222cb1c2624c584/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=224&deviceId=54ff7ba69222cb1c2624c584&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false
+
+#EXTINF:-1  tvg-id="YahooFinance.us" group-title="Business" tvg-logo="https://f9q4g5j6.ssl.hwcdn.net/602ab939db63ed4c92785303",Yahoo! Finance (1080p)
+https://yahoo-samsung.amagi.tv/playlist.m3u8
+
+
+#EXTINF:-1  tvg-id="YahooFinance.us" group-title="Business" tvg-logo="https://f9q4g5j6.ssl.hwcdn.net/602ab939db63ed4c92785303",Yahoo! Finance (1080p)
+https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8
+
+
+
+#EXTINF:-1, food 52
+https://dai2.xumo.com/xumocdn/p=/amagi_hls_data_xumo1212A-food52/CDN/playlist.m3u8
+
+
+
+
